@@ -1,0 +1,22 @@
+﻿@model Kategori
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Kategori Güncelleme</h2>
+            @using (Html.BeginForm("guncelleKat", "Ornek", FormMethod.Post, new { @class = "form" }))
+            {
+                <div class="form-group">
+                    @Html.HiddenFor(a => a.KategoriID)
+                </div>
+                <div class="form-group">
+                    <label for="KategoriAdi">Kategori Adi</label>
+                    @Html.TextBoxFor(a => a.KategoriAdi, new { @class = "form-control" })
+                </div>
+
+                <input class="btn btn-primary mt-3" type="submit" value="Kategoriyi Güncelle" />
+            }
+        </div>
+    </div>
+</div>

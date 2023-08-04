@@ -1,0 +1,32 @@
+﻿@model CategoryModel
+<div class="container">
+    <h2 class="text-center">Kategori Ekle</h2>
+    <div>
+        <form asp-action="Hede" asp-controller="Ornek" method="post">
+
+
+
+            <label class="h5">Kategori Adi</label>
+
+            <input type="text" name="name" value="" asp-for=" CategoryName " class="form-control" />
+
+            <br />
+
+            @*<input class="mt-3 text-center btn btn-primary" type="submit" value="Kategori Ekle" />*@
+            <button type="submit"> ekle</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+<div>
+    <form asp-action="Hede" asp-controller="Ornek" method="post">
+        <label>Ad : </label> <input asp-for="CategoryName" type="text" value="" />
+        <br />
+        
+        <input class="btn btn-danger col-md-6" type="submit" name="name" value="Ekle" />
+    </form>
+
+</div>

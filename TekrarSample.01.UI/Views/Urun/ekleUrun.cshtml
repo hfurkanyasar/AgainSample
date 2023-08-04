@@ -1,0 +1,36 @@
+﻿@model Urun
+
+<div class="container">
+    <h2 class="text-center">Kategori Ekle</h2>
+    <div>
+        @using (Html.BeginForm("ekleUrun", "Urun", FormMethod.Post))
+        {
+            <div class="col-md-6 offset-md-3">
+
+                <div class="form-group">
+                    <label for="KategoriID" class="h5">KategoriID</label>
+                    @Html.TextBoxFor(a => a.KategoriID, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="Urun Adi" class="h5">Urun Adi</label>
+                    @Html.TextBoxFor(a => a.UrunAdi, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="Urun Fiyatı" class="h5">Urun Fiyatı</label>
+                    @Html.TextBoxFor(a => a.UrunFİyati, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="Urun Stok Adeti" class="h5">Urun Stok Adeti </label>
+                    @Html.TextBoxFor(a => a.UrunStokAdeti, new { @class = "form-control" })
+                </div>
+                <br />
+
+                <input class="mt-3 text-center btn btn-primary" type="submit" value="Urun Ekle" />
+
+            </div>
+        }
+    </div>
+</div>

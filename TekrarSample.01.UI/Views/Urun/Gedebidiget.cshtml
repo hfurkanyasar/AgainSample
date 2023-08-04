@@ -1,0 +1,16 @@
+﻿@model UrunWithCategoryVM
+
+
+@using (Html.BeginForm("Gedebidiget", "Urun", FormMethod.Post))
+{
+    @Html.TextBoxFor(a => a.UrunAdi)
+    <br />
+    @Html.TextBoxFor(a => a.UrunFİyati)
+    <br />
+    @Html.DropDownListFor(a => a.KategoriID, Model.KategoriListesi)
+    <br />
+    @Html.TextBoxFor(a => a.UrunStokAdeti)
+
+    <input type="submit" name="name" value="ekle" />
+
+}

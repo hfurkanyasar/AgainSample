@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TekrarSample.01.UI", "TekrarSample.01.UI\TekrarSample.01.UI.csproj", "{856011AA-594F-40CB-BCD9-222110330066}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{856011AA-594F-40CB-BCD9-222110330066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856011AA-594F-40CB-BCD9-222110330066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856011AA-594F-40CB-BCD9-222110330066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856011AA-594F-40CB-BCD9-222110330066}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CB533C0-727D-4D42-AE41-0C8A826815C3}
+	EndGlobalSection
+EndGlobal
